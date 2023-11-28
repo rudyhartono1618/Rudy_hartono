@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>rudi Marketplace</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+      }
+
+      .produk {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 2em;
+      }
+
+      .item {
+        border: 1px solid #ccc;
+        padding: 1em;
+        margin: 1em;
+        max-width: 300px;
+      }
+
+      .item img {
+        height: 250px;
+        width: 250px;
+      }
+
+      .harga {
+        font-weight: bold;
+        color: #27ae60;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>rudi Marketplace</h1>
+    </header>
+
+    <div class="produk">
+      <div class="item">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Produk 1"
+        />
+        <h2>Kacamata model clip-on buat gaya 2023</h2>
+        <p>
+          model clip-on, juga memiliki kacamata sehari-hari yang khas dengan
+          model frame keren seperti Claude Black, Citium Black, hingga Cartes
+        </p>
+        <span class="harga">Rp 100.000</span>
+        <button>Beli</button>
+      </div>
+
+      <div class="item">
+        <img
+          src="https://dynamic.zacdn.com/ijjuGLOcQrANUYUqHVp_ZZQtaUg=/filters:quality(70):format(webp)/https://static-id.zacdn.com/p/oppaglasses-0768-7581573-1.jpg"
+          alt="Produk 2"
+        />
+        <h2>Oppaglasses</h2>
+        <p>
+          Frame Kacamata Korea Pria Wanita OPPA OP15 BLSV Hitam Silver Bulat -
+          Lensa
+        </p>
+        <span class="harga">Rp 150.000</span>
+        <button>Beli</button>
+      </div>
+    </div>
+
+    <footer>
+      <p><i>&copy; 2023 Rudi Marketplace</i></p>
+    </footer>
+  </body>
+</html>
